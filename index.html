@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Carousel</title>
+  <title>I-Watch</title>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top bar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="index.html">I-Watch</a>
+        <img id="montreicone" src="assets/img/watch.png" alt="">
+        <button id="montr" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img id="montreicon" src="assets/img/watch.png" alt="icone montre">
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <div class="text-center dropdown">
+              <button class=" marque text-white btn dropdown-toggle"
+              type="button" id="dropdownMenu1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Marques
+            </button>
+            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#!">Fossil</a>
+              <a class="dropdown-item" href="#!">Casio</a>
+              <a class="dropdown-item" href="#!">Swatch</a>
+              <a class="dropdown-item" href="#!">Seiko</a>
+            </div>
+          </div>
+          <li class="selection nav-item active">
+            <a class="text-center nav-link text-light" href="#">Homme <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="selection nav-item active">
+            <a class="text-center nav-link text-light" href="#">Femme <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="contact nav-item active">
+            <a class="text-center nav-link text-light" href="#">Contact <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <div class="btndp btn-group">
+          <button type="button" class="btn text-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img id="panier" src="assets/img/Basket-icon.png" alt="">
+          </button>
+          <div class="dropdown-menu">
+            <p class="text-center">Il y a 1 article dans votre panier</p>
+            <div class="card-body">
+              <img class="montrepanier" src="assets/img/montretest.jpg" alt="Card image cap">
+              <h4 class="text-center card-title">Cluse</h4>
+              <p class="text-center card-text">
+                Montre La Tétragone - Gold White Green Alligator
+              </p>
+              <p class="text-center card-text">
+                89,95 €
+              </p>
+              <div class="text-center btn">
+                <button type="button" class="btn btn-dark  btn-sm">Suprimé l'article</button>
+                <button type="button" class="btn btn-dark  btn-sm">Passé commande</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
   <div class="container-fluid mt-5 mb-5">
     <!-- carousel seiko -->
     <h2>Montre Homme</h2>
@@ -24,7 +84,7 @@
             <p class="card-text font-weight-bold">1049,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSeiko1">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -46,7 +106,7 @@
             <p class="card-text font-weight-bold">539,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSeiko2">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -68,7 +128,7 @@
             <p class="card-text font-weight-bold">189,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSeiko3">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -90,7 +150,7 @@
             <p class="card-text font-weight-bold">349,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSeiko4">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -115,7 +175,7 @@
             <p class="card-text font-weight-bold">279,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addFossil1">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -137,7 +197,7 @@
             <p class="card-text font-weight-bold">129,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addFossil2">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -159,7 +219,7 @@
             <p class="card-text font-weight-bold">219,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addFossil3">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -181,7 +241,7 @@
             <p class="card-text font-weight-bold">199,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addFossil4">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -206,7 +266,7 @@
             <p class="card-text font-weight-bold">29,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addCasio1">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -228,7 +288,7 @@
             <p class="card-text font-weight-bold">159,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addCasio2">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -250,7 +310,7 @@
             <p class="card-text font-weight-bold">34,90€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addCasio3">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -272,7 +332,7 @@
             <p class="card-text font-weight-bold">29,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addCasio4">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -298,7 +358,7 @@
             <p class="card-text font-weight-bold">29,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSwatch1">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -320,7 +380,7 @@
             <p class="card-text font-weight-bold">70,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSwatch2">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -342,7 +402,7 @@
             <p class="card-text font-weight-bold">70,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSwatch3">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -364,7 +424,7 @@
             <p class="card-text font-weight-bold">29,00€</p>
             <div class="row d-flex flex-start justify-content-center w-100">
               <div class="col m-2">
-                <a href="#" class="btn btn-dark">Ajouter au panier</a>
+                <a href="#" class="btn btn-dark addSwatch4">Ajouter au panier</a>
               </div>
               <div class="col m-2">
                 <!-- Button trigger modal -->
@@ -415,7 +475,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSeiko1">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -457,7 +517,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSeiko2">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -499,7 +559,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSeiko3">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -541,7 +601,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>SPB077J1
+              <button type="button" class="btn btn-dark addSeiko4">Ajouter au panier</button>SPB077J1
             </div>
           </div>
         </div>
@@ -552,7 +612,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Fossil Q-Explorist HR FTW4018</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -564,7 +624,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: HR FTW4018</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -583,7 +643,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addFossil1">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -594,7 +654,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Fossil Neutra FS5380</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -606,7 +666,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: FS5380</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -625,7 +685,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addFossil2">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -636,7 +696,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Fossil Gran Automatic ME3102</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -648,7 +708,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: ME3102</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -667,7 +727,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addFossil3">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -678,7 +738,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Fossil Townsman FS5349</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -690,7 +750,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: FS5349</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -709,7 +769,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addFossil4">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -720,7 +780,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Casio AE-1000W</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -732,7 +792,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: AE-1000W</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -751,7 +811,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addCasio1">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -762,7 +822,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Casio Edifice EF-527D-1AVEF</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -774,7 +834,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: EF-527D-1AVEF</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -793,7 +853,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addCasio2">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -804,7 +864,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Casio Vintage A158WEA</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -816,7 +876,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: A158WEA</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -835,7 +895,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addCasio3">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -846,7 +906,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Casio LRW-200H-1BVEF</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -858,7 +918,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: LRW-200H-1BVEF</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -877,7 +937,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addCasio4">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -888,7 +948,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Swatch Dark Rebel SUOB704</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -900,7 +960,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: SUOB704</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -919,7 +979,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSwatch1">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -930,7 +990,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Swatch White Lacquered SUOW100</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -942,7 +1002,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: SUOW100</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -961,7 +1021,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSwatch2">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -972,7 +1032,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Swatch Gaet SUOB714</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -984,7 +1044,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: SUOB714</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -1003,7 +1063,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSwatch3">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -1014,7 +1074,7 @@
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Seiko Prospex SPB077J1</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Swatch Blue Pool YGS474G</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -1026,7 +1086,7 @@
                 </div>
                 <div class="col-sm d-flex flex-column">
                   <h3 class="m-2">Caractéristiques</h3>
-                  <h5 class="m-2">Référence: SPB077J1</h5>
+                  <h5 class="m-2">Référence: YGS474G</h5>
                   <div class="row-sm">
                     <div class="col-sm d-flex flex-column">
                       <p>Genre : Homme</p>
@@ -1045,13 +1105,12 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark">Ajouter au panier</button>
+              <button type="button" class="btn btn-dark addSwatch4">Ajouter au panier</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
